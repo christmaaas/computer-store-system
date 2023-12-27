@@ -1,0 +1,32 @@
+13412;7;PROJECT X Hyperion GR701;Черный;Сталь;Закаленное стекло;ATX;50;5
+99879;7;PROJECT X Hyperion GR706;Белый;Сталь;Акриловое стекло;mini-ATX;48;3
+98341;7;GAMEMAX Aero Mini Eco V1;Черный;Сталь;Закаленное стекло;ATX;55;1
+85456;7;GAMEMAX Aero Mini Eco V2;Белый;Сталь;Стальная;mini-ATX;60;8
+14452;7;DEEPCOOL CC360 ARGB R-CC360-BKAPM3-G-1;Черный;Сталь;Закаленное стекло;mini-ATX;65;10
+96819;7;AEROCOOL Cylon Tempered Glass;Черный;Сталь;Закаленное стекло;ATX;55;8
+98641;7;DEEPCOOL Macube 110 BK R-MACUBE110-BKNGM1N-G-1;Черный;Сталь;Акриловое стекло;mini-ATX;55;4
+25459;7;MONTECH AIR 100 Lite;Белый;Сталь;Закаленное стекло;mini-ATX;60;6
+32412;7;PROJECT X Hyperion GR711;Белый;Сталь;Закаленное стекло;ATX;50;5
+97819;7;PROJECT X Hyperion GR705;Белый;Сталь;Акриловое стекло;mini-ATX;48;3
+98334;7;GAMEMAX Aero Mini Eco V1;Черный;Сталь;Закаленное стекло;ATX;55;1
+86157;7;GAMEMAX Aero Mini Eco V2;Белый;Сталь;Стальная;mini-ATX;60;8
+24471;7;DEEPCOOL CC360 ARGB R-CC361-GKAPM3-G-1;Черный;Сталь;Закаленное стекло;mini-ATX;65;15
+46619;7;AEROCOOL Cylon Tempered Glass;Черный;Сталь;Закаленное стекло;ATX;55;8
+68549;7;DEEPCOOL Macube 110 BK R-MVCUBE110-BKNGMEN-G-1;Черный;Сталь;Акриловое стекло;mini-ATX;55;6
+22469;7;MONTECH AIR 100 Lite;Черный;Сталь;Закаленное стекло;mini-ATX;60;10
+97932;7;PROJECT X Hyperion GR701;Черный;Сталь;Закаленное стекло;ATX;50;5
+93761;7;PROJECT X Hyperion GR706;Белый;Сталь;Акриловое стекло;mini-ATX;48;3
+84543;7;GAMEMAX Aero Mini Eco V1;Черный;Сталь;Закаленное стекло;ATX;55;1
+31837;7;GAMEMAX Aero Mini Eco V2;Белый;Сталь;Стальная;mini-ATX;60;8
+29195;7;DEEPCOOL CC360 ARGB R-CC360-BKAPM3-G-1;Черный;Сталь;Закаленное стекло;mini-ATX;65;10
+40693;7;AEROCOOL Cylon Tempered Glass;Черный;Сталь;Закаленное стекло;ATX;55;8
+45589;7;DEEPCOOL Macube 110 BK R-MACUBE110-BKNGM1N-G-1;Черный;Сталь;Акриловое стекло;mini-ATX;55;4
+40924;7;MONTECH AIR 100 Lite;Белый;Сталь;Закаленное стекло;mini-ATX;60;7
+48881;7;PROJECT X Hyperion GR711;Белый;Сталь;Закаленное стекло;ATX;50;5
+56781;7;PROJECT X Hyperion GR705;Белый;Сталь;Акриловое стекло;mini-ATX;48;3
+39418;7;GAMEMAX Aero Mini Eco V1;Черный;Сталь;Закаленное стекло;ATX;55;1
+39291;7;GAMEMAX Aero Mini Eco V2;Белый;Сталь;Стальная;mini-ATX;60;8
+22255;7;DEEPCOOL CC360 ARGB R-CC361-GKAPM3-G-1;Черный;Сталь;Закаленное стекло;mini-ATX;65;15
+22138;7;AEROCOOL Cylon Tempered Glass;Черный;Сталь;Закаленное стекло;ATX;55;8
+42008;7;DEEPCOOL Macube 110 BK R-MVCUBE110-BKNGMEN-G-1;Черный;Сталь;Акриловое стекло;mini-ATX;55;6
+17369;7;MONTECH AIR 100 Lite;Черный;Сталь;Закаленное стекло;mini-ATX;60;10
