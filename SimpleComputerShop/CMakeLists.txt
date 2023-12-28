@@ -23,8 +23,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(SimpleComputerShop
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
-        alghoritms.cpp cart.cpp case.cpp component.cpp configurator.cpp cooler.cpp cpu.cpp employee.cpp gpu.cpp motherboard.cpp order.cpp power_unit.cpp ram.cpp rom.cpp stock.cpp
-        alghoritms.h cart.h case.h component.h configurator.h cooler.h cpu.h employee.h gpu.h motherboard.h order.h power_unit.h ram.h rom.h stock.h
+        src/alghoritms.cpp src/alghoritms.h src/cart.cpp src/cart.h src/case.cpp src/case.h src/component.cpp src/component.h src/configurator.cpp src/configurator.h src/cooler.cpp src/cooler.h src/cpu.cpp src/cpu.h src/employee.cpp src/employee.h src/gpu.cpp src/gpu.h src/main.cpp src/mainwindow.cpp src/mainwindow.h src/mainwindow.ui src/motherboard.cpp src/motherboard.h src/order.cpp src/order.h src/power_unit.cpp src/power_unit.h src/ram.cpp src/ram.h src/rom.cpp src/rom.h src/stock.cpp src/stock.h
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET SimpleComputerShop APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
