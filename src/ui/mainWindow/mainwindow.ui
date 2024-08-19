@@ -1,0 +1,860 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1046</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="stockTab">
+       <attribute name="title">
+        <string>Склад</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="stockLayout">
+        <item>
+         <layout class="QHBoxLayout" name="stockButtonLayout">
+          <item>
+           <layout class="QVBoxLayout" name="stockSortLayout">
+            <item>
+             <widget class="QComboBox" name="stockFilterComboBox">
+              <item>
+               <property name="text">
+                <string>Тип</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Все</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Видеокарты</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Процессоры</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Материнские платы</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Оперативная память</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Блоки питания</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Накопители</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Корпуса</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Охлаждение</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="sortButton">
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>Сортировать</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QPushButton" name="searchButton">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Поиск по складу</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="infoButton">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Информация о складе</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="stockTable">
+          <column>
+           <property name="text">
+            <string>Артикул</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Тип</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Название</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Характеристики</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Цена</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Количество</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="cartTab">
+       <attribute name="title">
+        <string>Корзина</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="cartLayout">
+        <item>
+         <layout class="QHBoxLayout" name="cartButtonsLayout">
+          <item>
+           <layout class="QVBoxLayout" name="cartSortLayout">
+            <item>
+             <widget class="QComboBox" name="cartFilterComboBox">
+              <item>
+               <property name="text">
+                <string>Тип</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Все</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Видеокарты</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Процессоры</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Материнские платы</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Оперативная память</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Блоки питания</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Накопители</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Корпуса</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Охлаждение</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="sortButton">
+              <property name="text">
+               <string>Сортировать</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QPushButton" name="clearCartButton">
+            <property name="text">
+             <string>Очистить корзину</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="orderButton">
+            <property name="text">
+             <string>Оформить заказ</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="cartSumLabel">
+            <property name="text">
+             <string>Сумма заказа: 0$</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="cartTable">
+          <column>
+           <property name="text">
+            <string>Артикул</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Тип</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Название</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Характеристики</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Цена</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Количество</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="configuratorTab">
+       <property name="windowTitle">
+        <string>Form</string>
+       </property>
+       <attribute name="title">
+        <string>Конфигуратор</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalConfiguratorLayout">
+        <item>
+         <layout class="QVBoxLayout" name="verticalConfiguratorLayout1">
+          <item>
+           <widget class="QLabel" name="configuratorSelectLabel">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>25</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Выберите конфигурацию компьютера</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignmentFlag::AlignTop</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="cpuLabel">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Процессор</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="cpuButton">
+            <property name="text">
+             <string>Выбрать процессор</string>
+            </property>
+            <property name="fixedWidth" stdset="0">
+             <number>275</number>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="motherboardLabel">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Материнская плата</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="motherboardButton">
+            <property name="text">
+             <string>Выбрать материнскую плату</string>
+            </property>
+            <property name="fixedWidth" stdset="0">
+             <number>275</number>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="gpuLabel">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Видеокарта</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="gpuButton">
+            <property name="text">
+             <string>Выбрать видеокарту</string>
+            </property>
+            <property name="fixedWidth" stdset="0">
+             <number>275</number>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="ramLabel">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Оперативная память</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="ramButton">
+            <property name="text">
+             <string>Выбрать оперативную память</string>
+            </property>
+            <property name="fixedWidth" stdset="0">
+             <number>275</number>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="romLabel">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Накопитель</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="romButton">
+            <property name="text">
+             <string>Выбрать накопитель</string>
+            </property>
+            <property name="fixedWidth" stdset="0">
+             <number>275</number>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="coolerLabel">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Охлаждение</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="coolerButton">
+            <property name="text">
+             <string>Выбрать охлаждение</string>
+            </property>
+            <property name="fixedWidth" stdset="0">
+             <number>275</number>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="powerUnitLabel">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Блок питания</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="powerUnitButton">
+            <property name="text">
+             <string>Выбрать блок питания</string>
+            </property>
+            <property name="fixedWidth" stdset="0">
+             <number>275</number>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="caseLabel">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Корпус</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="caseButton">
+            <property name="text">
+             <string>Выбрать корпус</string>
+            </property>
+            <property name="fixedWidth" stdset="0">
+             <number>275</number>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="clearButton">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Очистить</string>
+            </property>
+            <property name="fixedWidth" stdset="0">
+             <number>100</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalConfiguratorLayout2">
+          <item>
+           <widget class="QLabel" name="configuratorSelectedLabel">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>25</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Конфигурация компьютера</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignmentFlag::AlignTop</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="selectedCpuLabel">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Процессор: не выбрано</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="selectedMotherboardLabel">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Материнская плата: не выбрано</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="selectedGpuLabel">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Видеокарта: не выбрано</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="selectedRamLabel">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Оперативная память: не выбрано</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="selectedRomLabel">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Накопитель: не выбрано</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="selectedCoolerLabel">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Охлаждение: не выбрано</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="selectedPowerUnitLabel">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Блок питания: не выбрано</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="selectedCaseLabel">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Корпус: не выбрано</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="sumLabel">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>СУММА: 0$</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="confirmButton">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>ГОТОВО</string>
+            </property>
+            <property name="fixedWidth" stdset="0">
+             <number>180</number>
+            </property>
+            <property name="fixedHeight" stdset="0">
+             <number>50</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="ordersTab">
+       <property name="windowTitle">
+        <string>Orders</string>
+       </property>
+       <attribute name="title">
+        <string>Список заказов</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="orderLayout">
+        <item>
+         <widget class="QTableWidget" name="orderTable">
+          <property name="columnCount">
+           <number>6</number>
+          </property>
+          <attribute name="horizontalHeaderDefaultSectionSize">
+           <number>100</number>
+          </attribute>
+          <attribute name="horizontalHeaderStretchLastSection">
+           <bool>true</bool>
+          </attribute>
+          <attribute name="verticalHeaderVisible">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="verticalHeaderMinimumSectionSize">
+           <number>30</number>
+          </attribute>
+          <attribute name="verticalHeaderDefaultSectionSize">
+           <number>30</number>
+          </attribute>
+          <attribute name="verticalHeaderHighlightSections">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="verticalHeaderStretchLastSection">
+           <bool>false</bool>
+          </attribute>
+          <column>
+           <property name="text">
+            <string>Номер заказа</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Получатель</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Номер получателя</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Адрес доставки</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Товары</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Сумма заказа</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="userInfoTab">
+       <attribute name="title">
+        <string>Пользователь</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="userInfoLayout">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QLabel" name="titleLabel">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>35</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>ИНФОРМАЦИЯ О ПОЛЬЗОВАТЕЛЕ</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="imageLabel">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="loginLabel">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Логин: </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="positionLabel">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Должность: </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="phoneNumberLabel">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Контактный номер: </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="idLabel">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>20</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>ID: </string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1046</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
